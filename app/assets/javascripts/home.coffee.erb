@@ -1,0 +1,19 @@
+$ ->
+  imagePath = "<%= image_path 'star.svg' %>"
+  s = Snap('#screen')
+  Snap.load imagePath, (f) ->
+    s.append f
+    littleStar = s.select("polygon#littlestar")
+    classes = littleStar.attr('class')
+    littleStar.removeClass(classes)
+    littleStar.attr
+      name: 'littlestar'
+      fill: 'green'
+      stroke: 'black'
+      'strokeWidth': "*=1"
+    attrs = 
+      stroke: '#ff0000'
+      "fill-opacity": 0.5
+      'strokeWidth': "*=10"
+      fill: "#fc0"
+    littleStar.animate attrs, 1000

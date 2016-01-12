@@ -10,14 +10,15 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'quiet_assets'
+gem 'high_voltage'
+gem 'simple_form'
+
+# Appearance
 gem 'bourbon'
 gem 'bitters'
 gem 'neat'
-gem 'quiet_assets'
-
-gem 'high_voltage'
-
-gem 'simple_form'
+gem 'haml-rails'
 
 group :development do
   gem 'web-console', '~> 2.0'
