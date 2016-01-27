@@ -19,6 +19,14 @@ gem 'bourbon'
 gem 'bitters'
 gem 'neat'
 gem 'haml-rails'
+gem 'react-rails'
+
+# Creating sample data
+gem 'faker'
+gem 'factory_girl_rails'
+
+gem 'awesome_print'
+gem 'will_paginate'
 
 group :development do
   gem 'web-console', '~> 2.0'
