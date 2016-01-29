@@ -13,12 +13,23 @@ gem 'jbuilder', '~> 2.0'
 gem 'quiet_assets'
 gem 'high_voltage'
 gem 'simple_form'
+gem 'responders'
 
 # Appearance
 gem 'bourbon'
 gem 'bitters'
 gem 'neat'
 gem 'haml-rails'
+gem 'react-rails'
+gem 'sprockets-coffee-react'
+gem 'marked-rails'
+
+# Creating sample data
+gem 'faker'
+gem 'factory_girl_rails'
+
+gem 'awesome_print'
+gem 'will_paginate'
 
 group :development do
   gem 'web-console', '~> 2.0'
