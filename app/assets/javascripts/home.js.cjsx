@@ -38,6 +38,7 @@ PostBox = React.createClass
       
     $.ajax
       url: this.props.url
+      
       dataType: 'json'
       type: 'POST'
       data:
@@ -68,7 +69,8 @@ PostBox = React.createClass
 
 PostList = React.createClass
   render: ->
-    postNodes = this.props.data.map (post) ->
+    arr = new Array(this.props.data)
+    postNodes = arr.map (post) ->
       <Post subject={post.subject} key={post.id}>
         {post.body}
       </Post>
