@@ -23,6 +23,7 @@ gem 'haml-rails'
 gem 'react-rails'
 gem 'sprockets-coffee-react'
 gem 'marked-rails'
+gem 'underscore-rails'
 
 # Creating sample data
 gem 'faker'

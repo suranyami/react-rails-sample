@@ -1,8 +1,9 @@
 #= require jquery
 #= require jquery_ujs
 #= require react
-#= require marked
 #= require react_ujs
+#= require marked
+#= require underscore
 #= require components
 ##= require turbolinks
 #= require snapsvg
