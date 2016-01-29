@@ -22,6 +22,7 @@ gem 'neat'
 gem 'haml-rails'
 gem 'react-rails'
 gem 'sprockets-coffee-react'
+gem 'marked-rails'
 
 # Creating sample data
 gem 'faker'
