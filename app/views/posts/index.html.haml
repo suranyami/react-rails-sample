@@ -1,14 +1,23 @@
-%h1 Posts
+%h1 Listing posts
+
+%table
+  %thead
+    %tr
+      %th Subject
+      %th Body
+      %th
+      %th
+      %th
+
+  %tbody
+    - @posts.each do |post|
+      %tr
+        %td= post.subject
+        %td= post.body
+        %td= link_to 'Show', post
+        %td= link_to 'Edit', edit_post_path(post)
+        %td= link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
 
 = link_to 'New Post', new_post_path
-
-.posts
-  %ul
-    - @posts.each do |post|
-      %li
-        %h2= post.subject
-        %p= post.body
-        .actions
-          %span= link_to 'Show', post
-          %span= link_to 'Edit', edit_post_path(post)
-          %span= link_to 'Destroy', post, :method => :delete, :data => { :confirm => 'Are you sure?' }
