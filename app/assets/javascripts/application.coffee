@@ -1,6 +1,7 @@
 #= require jquery
 #= require jquery_ujs
 #= require react
+#= require marked
 #= require react_ujs
 #= require components
 ##= require turbolinks
