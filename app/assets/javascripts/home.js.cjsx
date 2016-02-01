@@ -29,7 +29,6 @@ semitoneOf = (baseFreq, num) ->
     frequency: A4
   
   change: (e) ->
-    console.log e
     e.preventDefault()
     frequency = e.target.value
     @setState
@@ -47,7 +46,6 @@ semitoneOf = (baseFreq, num) ->
     frequency: A4
 
   handleFrequencyChange: (frequency) ->
-    console.log frequency
     this.setState
       frequency: frequency
     
